@@ -1,24 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './index.css';
 import { render } from 'react-dom'
 import App from './containers/App'
-import Admin from './components/Admin'
-import Genre from './components/Genre'
-import Home from './components/Home'
+// import Admin from './components/Admin'
+// import Genre from './components/Genre'
+// import Home from './components/Home'
 
 import * as serviceWorker from './serviceWorker';
 
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+//import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
 render(
-    <Router history={browserHistory}>
-        <Route path='/' component={App}>
-            <IndexRoute component={Home} />
-            <Route path='admin' component={Admin} />
-            <Route path='genre' component={Genre} />
-        </Route>
-    </Router>,
+    <App />,
     document.getElementById('root')
 )
 
